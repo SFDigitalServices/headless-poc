@@ -1,10 +1,12 @@
 var $ = require('jquery');
 
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
+import App from './components/App'
+import router from './router'
 
 new Vue({
-  el: '#app'
+  el: '#app',
+  router,
+  template: '<App/>',
+  components: { App }
 });

@@ -24,6 +24,7 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
+    "uswds": "^1.6.1",
     "vue-router": "^3.0.1"
   }
 }

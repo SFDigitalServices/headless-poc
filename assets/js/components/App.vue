@@ -1,6 +1,13 @@
 <template>
   <div>
-    <p>This is the App vue component</p>
+
+    <nav class="site-nav-secondary sticky">
+      <ul>
+        <li><router-link to="/" class="usa-current">Home</router-link></li>
+        <li><router-link to="/ServiceList">Services</router-link></li>
+      </ul>
+    </nav>
+
     <router-view></router-view>
   </div>
 </template>
@@ -13,6 +20,6 @@
 
 <style scoped>
   p {
-    background-color: #555;
+    background-color: #eee;
   }
 </style>

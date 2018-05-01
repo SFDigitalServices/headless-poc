@@ -7,9 +7,27 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-      <div id="app">
-        {% block body %}{% endblock %}
-        <App/>
+      <div class="layout-container">
+        <header class="usa-header usa-header-extended" role="banner">
+          <div class="usa-navbar">
+            <div class="usa-logo" id="extended-logo">
+                <em class="usa-logo-text">
+                  <router-link to="/">
+                    <img src="{{ asset('build/images/logo.svg') }}" alt="Home" class="sfgov-logo-img" />
+                  </router-link>
+
+                  <router-link to="/">SF.gov</router-link>
+                </em>
+
+            </div>
+            <button class="usa-menu-btn">Menu</button>
+          </div>
+        </header>
+
+        <div id="app">
+          {% block body %}{% endblock %}
+          <router-view></router-view>
+        </div>
       </div>
 
       {% block javascripts %}

@@ -1,0 +1,25 @@
+.sfgov-logo-img {
+  vertical-align:middle;
+  margin-right: 25px;
+}
+
+.sfgov-service-header {
+  overflow: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f1f1f1;
+}
+
+.sfgov-service-section {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.sfgov-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.sfgov-tools-item {
+  margin-bottom: 20px;
+}

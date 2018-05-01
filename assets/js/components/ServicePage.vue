@@ -1,15 +1,6 @@
 <template>
   <div>
-    <p>This is the service list vue component</p>
-    <div>
-      <ul>
-        <li v-for="entity in nodeQuery.entities">
-          <router-link :to="{
-            name: 'ServicePage',
-            params: {id: entity.entityId} }">{{ entity.entityLabel }}</router-link>
-        </li>
-      </ul>
-    </div>
+  This is a service start page
   </div>
 </template>
 
@@ -17,9 +8,14 @@
   import gql from 'graphql-tag'
 
   export default {
+    data() {
+      return {
+        nodeQuery: {},
+      }
+    },
     apollo: {
-      nodeQuery: gql`query {
-        nodeQuery(
+      nodeById: gql`query {
+        nodeById(
           filter:{
             conditions:{
               field: "type",
@@ -38,17 +34,9 @@
         }
       }`
     },
-    data() {
-      return {
-        nodeQuery: {},
-      }
-    },
-    name: "serviceList"
+    name: "servicePage"
   }
 </script>
 
 <style scoped>
-  p {
-    background-color: #aaa;
-  }
 </style>
